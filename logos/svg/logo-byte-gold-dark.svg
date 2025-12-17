@@ -1,0 +1,66 @@
+<svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3D Gold Cube/Nugget with Binary Pattern -->
+  <g id="gold-cube">
+    <!-- Top face (isometric) -->
+    <polygon points="50,35 70,25 90,35 70,45" fill="url(#goldLight)"/>
+    <!-- Left face -->
+    <polygon points="30,45 50,35 70,45 50,55 30,65" fill="url(#goldMedium)"/>
+    <!-- Right face -->
+    <polygon points="70,45 90,35 90,55 70,65 70,45" fill="url(#goldDark)"/>
+    <!-- Front face -->
+    <polygon points="50,55 70,45 70,65 50,75 30,65 50,55" fill="url(#goldPrimary)"/>
+    
+    <!-- Binary code overlay on cube -->
+    <text x="42" y="62" font-family="monospace" font-size="8" fill="#000" opacity="0.4">10</text>
+    <text x="42" y="70" font-family="monospace" font-size="8" fill="#000" opacity="0.4">01</text>
+    
+    <!-- Pixel highlights on edges -->
+    <rect x="48" y="53" width="3" height="3" fill="#FFF" opacity="0.9"/>
+    <rect x="68" y="43" width="3" height="3" fill="#FFF" opacity="0.9"/>
+  </g>
+  
+  <!-- Binary particles floating around cube -->
+  <g id="binary-particles" opacity="0.6">
+    <text x="20" y="30" font-family="monospace" font-size="10" fill="#FFB800">1</text>
+    <text x="95" y="40" font-family="monospace" font-size="10" fill="#FFA500">0</text>
+    <text x="25" y="75" font-family="monospace" font-size="10" fill="#F4C430">1</text>
+    <text x="92" y="68" font-family="monospace" font-size="10" fill="#FFB800">0</text>
+  </g>
+  
+  <!-- Wordmark with tech typography -->
+  <g id="wordmark">
+    <text x="110" y="55" font-family="'Courier New', monospace" font-size="32" font-weight="700" fill="#FFFFFF" letter-spacing="2">
+      GOLDEN
+    </text>
+    <text x="110" y="85" font-family="'Courier New', monospace" font-size="32" font-weight="400" fill="#FFB800" letter-spacing="2">
+      BYTE
+    </text>
+    <!-- Pixel accent under BYTE -->
+    <rect x="110" y="90" width="140" height="2" fill="url(#goldGradient)"/>
+  </g>
+  
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="goldPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB800;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F4C430;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="goldMedium" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFA500;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="goldDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB800;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#CC9200;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFB800;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#F4C430;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+</svg>
